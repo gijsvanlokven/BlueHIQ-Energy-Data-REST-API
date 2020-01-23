@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using aspcore_bluehiq_api.Extensions;
@@ -12,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using NLog;
 
 namespace aspcore_bluehiq_api
 {
@@ -19,6 +21,7 @@ namespace aspcore_bluehiq_api
     {
         public Startup(IConfiguration configuration)
         {
+            LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
             Configuration = configuration;
         }
 
@@ -30,6 +33,7 @@ namespace aspcore_bluehiq_api
             services.ConfigureCors();
             services.ConfigureIISIntegration();
 
+            services.ConfigureLoggerService();
 
             services.AddControllers();
         }

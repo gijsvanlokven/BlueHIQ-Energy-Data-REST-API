@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EnergyData;
+using LoggerService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -29,6 +31,12 @@ namespace aspcore_bluehiq_api.Extensions
             {
 
             });
+        }
+
+        // Method for configuring the logger service
+        public static void ConfigureLoggerService(this IServiceCollection services)
+        {
+            services.AddSingleton<ILoggerManager, LoggerManager>();
         }
 
 

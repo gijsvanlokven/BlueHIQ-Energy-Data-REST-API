@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspcore-bluehiq-api", "aspcore-bluehiq-api\aspcore-bluehiq-api.csproj", "{DA35DEF3-C631-4427-A628-DC43A1B596E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspcore-bluehiq-api", "aspcore-bluehiq-api\aspcore-bluehiq-api.csproj", "{DA35DEF3-C631-4427-A628-DC43A1B596E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyData", "EnergyData\EnergyData.csproj", "{676779AE-0AC0-498D-9358-3E664EB877E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{26AFA2D7-4683-48DC-8462-115EC3E591B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{DA35DEF3-C631-4427-A628-DC43A1B596E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA35DEF3-C631-4427-A628-DC43A1B596E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA35DEF3-C631-4427-A628-DC43A1B596E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{676779AE-0AC0-498D-9358-3E664EB877E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{676779AE-0AC0-498D-9358-3E664EB877E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{676779AE-0AC0-498D-9358-3E664EB877E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{676779AE-0AC0-498D-9358-3E664EB877E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26AFA2D7-4683-48DC-8462-115EC3E591B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26AFA2D7-4683-48DC-8462-115EC3E591B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26AFA2D7-4683-48DC-8462-115EC3E591B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26AFA2D7-4683-48DC-8462-115EC3E591B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
